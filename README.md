@@ -15,8 +15,17 @@ https://www.youtube.com/watch?v=6l_kpygO0Ic
 - Create Queue 
 <img src="/pictures/queue.png" title="queue"  width="500">
 
-- Create Web API project
-<img src="/pictures/key_vault.png" title="key_vault"  width="500">
+- Get the connection queue connection string
+<img src="/pictures/connection_string.png" title="connection string"  width="500">
+
+- Play the app :
+<img src="/pictures/app.png" title="app"  width="500">
+
+- See the result in the queue :
+<img src="/pictures/app2.png" title="app"  width="500">
+
+- Create a key vault :
+<img src="/pictures/queue_key_vault.png" title="queue key vault"  width="500">
 
 
 

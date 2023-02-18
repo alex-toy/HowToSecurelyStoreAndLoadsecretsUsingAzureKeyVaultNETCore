@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 
 namespace MessageSender.Controllers
 {
+    [Route("api/[controller]")]
     public class MessageController : Controller
     {
         public IMessageSender MessageSender { get; set; }
@@ -13,7 +14,7 @@ namespace MessageSender.Controllers
         }
 
         [HttpPost]
-        public async Task Post()
+        public async Task Send()
         {
             await MessageSender.Send("Hello world");
         }

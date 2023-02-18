@@ -1,3 +1,4 @@
+using MessageSender.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +29,9 @@ namespace MessageSender
         {
 
             services.AddControllers();
+
+            services.AddTransient<IMessageSender, AzureQueueSender>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MessageSender", Version = "v1" });
