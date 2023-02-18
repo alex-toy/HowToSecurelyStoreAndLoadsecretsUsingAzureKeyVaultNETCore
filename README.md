@@ -29,6 +29,15 @@ Using Azure Key Vault Service allows for centralization and protection of your a
 - Add the **Logic App**
 <img src="/pictures/logic_app_access_policy.png" title="logic app access policy"  width="500">
 
+- Grab the **Secret Identifier**
+<img src="/pictures/secret_identifier.png" title="secret identifier"  width="500">
+
+- Add HTTP to the **Logic App**
+<img src="/pictures/http.png" title="logic app http"  width="800">
+
+- See the result :
+<img src="/pictures/http_success.png" title="http success"  width="800">
+
 
 
 
