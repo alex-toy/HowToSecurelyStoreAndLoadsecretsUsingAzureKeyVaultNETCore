@@ -10,6 +10,10 @@ https://www.youtube.com/watch?v=6l_kpygO0Ic
 
 - Create Web API project
 
+- Create **Storage Account**
+
+- Create Queue 
+<img src="/pictures/queue.png" title="queue"  width="500">
 
 - Create Web API project
 <img src="/pictures/key_vault.png" title="key_vault"  width="500">
