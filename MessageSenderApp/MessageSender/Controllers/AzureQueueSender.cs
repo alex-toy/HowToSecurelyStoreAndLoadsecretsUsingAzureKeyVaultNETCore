@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
+using Polly;
 using System.Threading.Tasks;
 
 namespace MessageSender.Controllers
@@ -16,8 +17,13 @@ namespace MessageSender.Controllers
 
         public async Task Send(string message)
         {
-            var connectionString = Configuration.GetValue<string>("QueueConnectionString");
-            await SendMessage(connectionString, message);
+            string connectionString = Configuration.GetValue<string>("QueueConnectionString");
+            var retryPolicy = Policy.Handle<StorageException>().RetryAsync(2, async (ex, count, context) =>
+            {
+                (Configuration as IConfigurationRoot).Reload();
+                connectionString = Configuration.GetValue<string>("queueConnectionStrings");
+            });
+            await retryPolicy.ExecuteAsync( () => SendMessage(connectionString, message));
         }
 
         public static async Task SendMessage(string ConnectionString, string message)

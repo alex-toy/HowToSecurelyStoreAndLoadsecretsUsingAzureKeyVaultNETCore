@@ -4,8 +4,21 @@ Using Azure Key Vault Service allows for centralization and protection of your a
 
 
 
+## How to Use Azure Key Vault | Working with Key Vault in Azure DevOps 
+
+- Create **Azure Key Vault**
+
+- Add **Role Assignment**
+<img src="/pictures/role_assignment.png" title="role assignment"  width="800">
+<img src="/pictures/role_assignment2.png" title="role assignment"  width="800">
+
+- Add **Access Policy**
+<img src="/pictures/demo_access_policy.png" title="access policy"  width="800">
+<img src="/pictures/demo_access_policy2.png" title="access policy"  width="800">
+
+
+
 ## Connect .Net Core to Azure Key Vault
-https://www.youtube.com/watch?v=6l_kpygO0Ic
 
 
 - Create Web API project
@@ -35,9 +48,13 @@ https://www.youtube.com/watch?v=6l_kpygO0Ic
 
 - Make sure the app is still working
 <img src="/pictures/coucou.png" title="last test"  width="800">
+<img src="/pictures/coucou2.png" title="last test"  width="800">
 
 
-### 
+### Resiliency
+```
+Polly
+```
 
 
 
@@ -78,13 +95,5 @@ https://www.youtube.com/watch?v=6l_kpygO0Ic
 - See the result :
 <img src="/pictures/http_success.png" title="http success"  width="800">
 
-
-
-
-
-
-
-
-https://www.youtube.com/watch?v=b21EQvfjvHc
 
 
