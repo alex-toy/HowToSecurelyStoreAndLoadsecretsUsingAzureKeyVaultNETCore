@@ -3,6 +3,21 @@
 Using Azure Key Vault Service allows for centralization and protection of your application secrets, certificates but also encryption keys for Virtual Machines.
 
 
+
+## Connect .Net Core to Azure Key Vault
+https://www.youtube.com/watch?v=6l_kpygO0Ic
+
+
+- Create Web API project
+
+
+- Create Web API project
+<img src="/pictures/key_vault.png" title="key_vault"  width="500">
+
+
+
+## Azure Key Vault - Secure secrets, keys and certificates
+
 1. Key vault
 
 - Create **Key Vault**
@@ -26,7 +41,7 @@ Using Azure Key Vault Service allows for centralization and protection of your a
 - Create an **access policy**
 <img src="/pictures/access_policy.png" title="access policy"  width="500">
 
-- Add the **Logic App**
+- Create an **Access Policy** for the **Logic App**
 <img src="/pictures/logic_app_access_policy.png" title="logic app access policy"  width="500">
 
 - Grab the **Secret Identifier**
@@ -46,7 +61,5 @@ Using Azure Key Vault Service allows for centralization and protection of your a
 
 
 https://www.youtube.com/watch?v=b21EQvfjvHc
-
-https://www.youtube.com/watch?v=PgujSug1ZbI
 
 
