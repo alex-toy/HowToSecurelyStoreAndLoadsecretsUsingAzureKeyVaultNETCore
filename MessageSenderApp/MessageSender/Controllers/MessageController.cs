@@ -14,9 +14,9 @@ namespace MessageSender.Controllers
         }
 
         [HttpPost]
-        public async Task Send()
+        public async Task Send(string message)
         {
-            await MessageSender.Send("Hello world");
+            await MessageSender.Send(message);
         }
     }
 }

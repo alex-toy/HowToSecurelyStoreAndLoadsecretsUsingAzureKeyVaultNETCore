@@ -13,19 +13,31 @@ https://www.youtube.com/watch?v=6l_kpygO0Ic
 - Create **Storage Account**
 
 - Create Queue 
-<img src="/pictures/queue.png" title="queue"  width="500">
+<img src="/pictures/queue.png" title="queue"  width="800">
 
 - Get the connection queue connection string
 <img src="/pictures/connection_string.png" title="connection string"  width="500">
 
 - Play the app :
-<img src="/pictures/app.png" title="app"  width="500">
+<img src="/pictures/app.png" title="app"  width="800">
 
 - See the result in the queue :
-<img src="/pictures/app2.png" title="app"  width="500">
+<img src="/pictures/app2.png" title="app"  width="800">
 
 - Create a key vault :
 <img src="/pictures/queue_key_vault.png" title="queue key vault"  width="500">
+
+- Create secret for the queue connection string :
+<img src="/pictures/queue_conn_string.png" title="queue connection string"  width="500">
+
+- Grab the key vault url :
+<img src="/pictures/kv_url.png" title="key vault url"  width="800">
+
+- Make sure the app is still working
+<img src="/pictures/coucou.png" title="last test"  width="800">
+
+
+### 
 
 
 
